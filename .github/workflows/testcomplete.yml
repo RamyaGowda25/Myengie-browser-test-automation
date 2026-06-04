@@ -1,0 +1,27 @@
+name: TestComplete Automation Runner
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch: 
+
+jobs:
+  run-tests:
+    runs-on: windows-latest 
+
+    steps:
+    - name: Checkout Code from GitHub
+      uses: actions/checkout@v4
+
+    - name: Execute TestComplete Tests
+      uses: SmartBear/TestComplete-action@v1
+      with:
+        # Custom configured matching your repository files
+        projectSuite: 'MyEngie.pjs'
+        project: 'MyAccount' 
+        
+    - name: Upload Test Results
+      uses: actions/upload-artifact@v4
+      with:
+        name: test-complete-html-logs
+        path: '**/Log/**'
