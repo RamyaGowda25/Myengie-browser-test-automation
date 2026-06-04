@@ -7,21 +7,24 @@ on:
 
 jobs:
   run-tests:
-    runs-on: windows-latest 
+    # CRUCIAL: Change this to 'self-hosted' so it executes on your local machine configuration
+    runs-on: self-hosted 
 
     steps:
     - name: Checkout Code from GitHub
       uses: actions/checkout@v4
 
-    - name: Execute TestComplete Tests
-      uses: SmartBear/TestComplete-action@v1
-      with:
-        # Custom configured matching your repository files
-        projectSuite: 'MyEngie.pjs'
-        project: 'MyAccount' 
+    - name: Execute TestComplete via Command Line
+      shell: cmd
+      run: |
+        echo "Starting TestComplete Regression Build..."
+        :: This line explicitly launches your project suite and triggers the project execution via command prompt
+        "C:\Program Files (x86)\SmartBear\TestComplete 15\Bin\TestComplete.exe" "%CD%\MyEngie.pjs" /run /p:MyAccount /exit /SilentMode
         
     - name: Upload Test Results
       uses: actions/upload-artifact@v4
+      if: always()   # Ensures logs upload even if a test step fails
       with:
         name: test-complete-html-logs
         path: '**/Log/**'
+
