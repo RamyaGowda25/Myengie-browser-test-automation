@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
+	<children>
+		<folder name="Get Account Numbers">
+			<child name="Get_Elec_Account_Number" key="{32917AF8-440B-4772-991F-8E4814880FE4}" path="Get_Elec_Account_Number.js" />
+			<child name="Get_Gas_Account_Number" key="{0110750F-3129-4C6B-BBF8-5323457E24CF}" path="Get_Gas_Account_Number.js" />
+			<child name="Get_Enquiry_Account_Number" key="{25C58B68-C842-4024-9A1F-90C813713C6A}" path="Get_Enquiry_Account_Number.js" />
+		</folder>
+		<folder name="Base">
+			<child name="Run_Broswer" key="{A8B33AE5-4919-42AF-A0CF-C63817581121}" path="Run_Broswer.js" />
+			<child name="OTP_Retrive_Flow" key="{E2FD21D8-4F4C-463D-96B6-A941BA23126F}" path="OTP_Retrive_Flow.js" />
+			<child name="wait_screen" key="{E2E425D3-F55E-4403-9E01-F800DD415501}" path="wait_screen.js" />
+			<child name="PayPal_Screen" key="{0A9A8482-0FAA-47E0-8D04-5D93E4DDDB66}" path="PayPal_Screen.js" />
+			<child name="Get_CUID" key="{7D6D2A97-FB91-4CF3-9899-F95774873C0A}" path="Get_CUID.js" />
+			<child name="Upload_image" key="{D3D0E697-331A-4F14-8EFA-3A9C846B680F}" path="Upload_image.js" />
+		</folder>
+		<folder name="Direct Debit Setup">
+			<folder name="Checkpoints">
+				<child name="DirectDebit_Checkpoint" key="{5F761445-9F4C-4E71-93FC-89E65CE87759}" path="DirectDebit_Checkpoint.js" />
+				<child name="DirectCredit_Checkpoint" key="{C46C94FD-F6FA-4297-8489-92ECA6413D8B}" path="DirectCredit_Checkpoint.js" />
+				<child name="PayPal_Checkpoint" key="{E39B63FF-5D51-4F6C-9C26-5FDFE8A0559B}" path="PayPal_Checkpoint.js" />
+				<child name="NoDirectDebit_Checkpoint" key="{7C97B763-76C5-4ECA-8F3A-E057AC71E2E3}" path="NoDirectDebit_Checkpoint.js" />
+			</folder>
+			<folder name="HUBCX_Validation">
+				<child name="PaymentMethod_ELEC_Account_HUBCX" key="{A27F6511-3218-495C-A2F0-A04A5A7F9E9C}" path="PaymentMethod_ELEC_Account_HUBCX.js" />
+				<child name="PaymentMethod_Gas_Account_HUBCX" key="{18992733-C980-444F-B666-4C1B64619671}" path="PaymentMethod_Gas_Account_HUBCX.js" />
+				<child name="PaymentMethod_DF_Account_HUBCX" key="{0B857E6D-3336-42D9-AB62-A32397B012C5}" path="PaymentMethod_DF_Account_HUBCX.js" />
+			</folder>
+			<child name="Get_DirectDebitElecAccount" key="{7880685F-5702-40B0-B753-AE65C12E4C24}" path="Get_DirectDebitElecAccount.js" />
+			<child name="Get_DirectDebitGasAccount" key="{187AE3FD-A5A9-487A-BA51-152A53F0EA15}" path="Get_DirectDebitGasAccount.js" />
+			<child name="Get_DirectDebitDFAccounts" key="{82C0CFF7-1B48-42BD-B1BE-9E180A3DAF5C}" path="Get_DirectDebitDFAccounts.js" />
+		</folder>
+		<folder name="Enquiry Submission">
+			<child name="Select_latest_enquiry" key="{BF60F4F8-6036-4ECE-82EB-7E03ECABE751}" path="Select_latest_enquiry.js" />
+			<child name="Self_MeterRead_ELEC_Account" key="{18139E74-9FF9-4D8B-9069-5DB05A8142C8}" path="Self_MeterRead_ELEC_Account.js" />
+			<child name="Submit_Enquiry_Gas_Account" key="{F09B99E4-5444-4BE1-AD4D-FE04629D03A5}" path="Submit_Enquiry_Gas_Account.js" />
+		</folder>
+		<folder name="One Off Payments">
+			<child name="OneOffPayment_ELEC_validation_HUBCX" key="{129E1343-DE52-466D-AA42-0FCF29881889}" path="OneOffPayment_ELEC_validation_HUBCX.js" />
+			<child name="OneOffPayments_Gas_Validation_HUBCX" key="{8864CD76-1A81-4F6B-83E8-65C517B4F652}" path="OneOffPayments_Gas_Validation_HUBCX.js" />
+		</folder>
+		<folder name="Payment Plans">
+			<child name="PaymentPlan_ELEC_HUBCX" key="{13818D52-FDB1-46F4-9E65-28D7EB4842DE}" path="PaymentPlan_ELEC_HUBCX.js" />
+			<child name="PaymentPlan_GAS_HUBCX" key="{915CE92F-E223-4657-AE9B-BC0052024035}" path="PaymentPlan_GAS_HUBCX.js" />
+		</folder>
+		<child name="BilliDeliveryByPost" key="{B5D518C0-0829-4A14-A46B-70CB409C448D}" path="BilliDeliveryByPost.js" />
+		<child name="Unit1" key="{FBACDCEF-869D-4B6F-96E6-925D474574DF}" path="Unit1.js" />
+	</children>
+</Root>

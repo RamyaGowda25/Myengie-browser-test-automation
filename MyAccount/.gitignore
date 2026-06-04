@@ -1,0 +1,25 @@
+# --- TestComplete User & Run-time Configurations ---
+*.tcLS
+*.tcUser
+*.tcLog
+*.tcpLog
+*.[0-9]*.tcLog
+_tclog/*
+
+# --- Test Visualizer (Heavy images that bloat Git) ---
+Visualizer/
+_Visualizer/
+*Visualizer*
+
+# --- Operating System & Temp Files ---
+Thumbs.db
+Ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.tmp
+*.bak
+*.log
+
+# --- IDE / Backup folders ---
+Backup/
+__history/

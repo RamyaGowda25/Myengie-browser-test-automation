@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{9576DAFD-0ADD-41A8-9897-C72F150AF6BB}" version="15.0">
+	<children>
+		<folder name="Base">
+			<child name="Close_Browser" key="{B7ED57EB-991D-4C91-A2AD-23AB00054DAF}" path="Close_Browser.tcKDTest" />
+			<child name="Navigate_application" key="{E5C8669A-5C76-4D18-BA4D-A2372F5BFDCD}" path="Navigate_application.tcKDTest" />
+		</folder>
+		<folder name="One_Off_Payments">
+			<child name="OOP_AMEX_ELEC" key="{464EF89B-1CCA-4985-9526-F23A262DC042}" path="OOP_AMEX_ELEC.tcKDTest" />
+			<child name="OOP_InvoicePage_PayNow_VISA_ELEC" key="{5A9682BF-1B3C-4AD8-A701-981FE11EFF42}" path="OOP_InvoicePage_PayNow_VISA_ELEC.tcKDTest" />
+			<child name="OOP_Dashboard_PayNow_MC_ELEC" key="{77168EC7-44C7-4DF4-A2AE-9548C31E9004}" path="OOP_Dashboard_PayNow_MC_ELEC.tcKDTest" />
+			<child name="OOP_Saved_Gas" key="{AA6A02BE-61DE-4CD8-8D5E-9E383599DE59}" path="OOP_Saved_Gas.tcKDTest" />
+			<child name="OOP_PayPal_Gas" key="{FA144840-0467-4FC4-B81E-D0207FC47FC1}" path="OOP_PayPal_Gas.tcKDTest" />
+		</folder>
+		<folder name="MyProfile">
+			<child name="Update_Password" key="{0913E868-08F9-4725-B9C7-08D8AFBAFFE8}" path="Update_Password.tcKDTest" />
+			<child name="Manage_Sigin_Email" key="{76C64913-2F24-49FE-AFE5-3A6724592F8B}" path="Manage_Sigin_Email.tcKDTest" />
+			<child name="Delete_Profile" key="{6AAAAFC1-381B-4C2F-806F-9D404DDC6501}" path="Delete_Profile.tcKDTest" />
+			<child name="Update_Phone" key="{6FD5B28E-7C2A-4819-8A22-729D83398496}" path="Update_Phone.tcKDTest" />
+			<child name="ExistingCustomer_Become_ProtectedCustomer" key="{3E1CCA1D-6BF6-4A06-901C-66B3866B9D0D}" path="ExistingCustomer_Become_ProtectedCustomer.tcKDTest" />
+			<child name="Update_Mobile_Number" key="{C347068A-0E58-4BBD-9280-1303188218B4}" path="Update_Mobile_Number.tcKDTest" />
+		</folder>
+		<folder name="Saved Payment Method">
+			<child name="Add_Saved_Card" key="{76056179-97B7-46DC-8748-99BEAEF56E0E}" path="Add_Saved_Card.tcKDTest" />
+		</folder>
+		<folder name="Conession">
+			<child name="Remove_Concession" key="{C26AAFA0-E8D7-4B42-9D52-6FAF962B9FC1}" path="Remove_Concession.tcKDTest" />
+			<child name="Add_Concession_VIC" key="{5140B0D8-2220-4728-B4E1-617B9650866C}" path="Add_Concession_VIC.tcKDTest" />
+			<child name="Edit_Concession" key="{5FA085D2-14AC-45E5-887E-AAF65AA12923}" path="Edit_Concession.tcKDTest" />
+			<child name="Add_Concession_NSW" key="{4AA3DC0A-B3B2-4A91-A7B4-E69201AAC75C}" path="Add_Concession_NSW.tcKDTest" />
+			<child name="Add_Concession_QLD" key="{55699FF2-3D50-4A82-AA79-D15FFCF8E495}" path="Add_Concession_QLD.tcKDTest" />
+		</folder>
+		<folder name="New Registration for Normal Customer">
+			<child name="New_Registartion_without_Mobile_Number" key="{89A09F6D-25CA-4C3F-8CF8-1735A807F9AD}" path="New_Registartion_without_Mobile_Number.tcKDTest" />
+			<child name="New_Registartion_without_Email_Use_Dot_Symbol" key="{150007F2-204A-488D-AE87-3FC25E09C15A}" path="New_Registartion_without_Email_Use_Dot_Symbol.tcKDTest" />
+			<child name="New_Registartion_without_email_Phonenumber" key="{24DD9B83-1A96-478A-A782-9CDB6BB224F5}" path="New_Registartion_without_email_Phonenumber.tcKDTest" />
+			<child name="Re_Set_Mobile_Number_during_Registration_OTPScreen" key="{BA887B11-8FE1-4A04-92CA-6C6BC6DC979C}" path="Re_Set_Mobile_Number_during_Registration_OTPScreen.tcKDTest" />
+			<child name="New_Registartion_for_Business_Customer" key="{835E5189-2377-478D-8A61-6F57BBA2B0F0}" path="New_Registartion_for_Business_Customer.tcKDTest" />
+			<child name="New_Registartion_for_Residential_Customer" key="{7DE17F55-4FDB-4E42-A1E6-BB0F76971903}" path="New_Registartion_for_Residential_Customer.tcKDTest" />
+			<child name="Re_Set_Mobile_Number_during_Registration_SendCode_Screen" key="{A6941C5E-5D70-4B59-B347-FA8889F27939}" path="Re_Set_Mobile_Number_during_Registration_SendCode_Screen.tcKDTest" />
+			<child name="New_Registration_Without_Email_Interupt_flow" key="{22BA41AF-CD4E-4F25-8D44-9240C885892F}" path="New_Registration_Without_Email_Interupt_flow.tcKDTest" />
+			<child name="New_RES_Suspended_account_user_name" key="{9D4080BC-4897-4DE1-BA02-ED9754981D04}" path="New_RES_Suspended_account_user_name.tcKDTest" />
+			<child name="New_Registration_No_MFA" key="{BA52E879-1C1E-4A56-8047-958EC341E014}" path="New_Registration_No_MFA.tcKDTest" />
+			<child name="New_Registration_With_MFA" key="{07FAEC1F-62FD-4126-B497-F601E426F8E7}" path="New_Registration_With_MFA.tcKDTest" />
+			<child name="New_Registartion_without_Email_Use_Plus_Symbol" key="{458A6F9B-C559-43F5-B1E5-1DF2E7C5A47B}" path="New_Registartion_without_Email_Use_Plus_Symbol.tcKDTest" />
+			<child name="New_Registartion_without_Email_Use_Minus_Symbol" key="{DCFB9F7D-739C-4B86-856D-867F81C6D82A}" path="New_Registartion_without_Email_Use_Minus_Symbol.tcKDTest" />
+			<child name="New_Registartion_without_Email_Use_Underscore_Symbol" key="{42CA0D6C-92E8-4CCE-9E0D-9AAB332E8EF1}" path="New_Registartion_without_Email_Use_Underscore_Symbol.tcKDTest" />
+		</folder>
+		<folder name="New Registration for Protected Customer">
+			<child name="RES_Protected_Yes_DIV_NO" key="{DF279B26-B6CC-4D7F-872B-20A1A2BE52A0}" path="RES_Protected_Yes_DIV_NO.tcKDTest" />
+			<child name="RES_Protected_Yes_DIV_Yes" key="{CC6013EB-ABBB-409C-8AB2-82FEE4DD7738}" path="RES_Protected_Yes_DIV_Yes.tcKDTest" />
+			<child name="Business_Protected_No_DIV_Yes" key="{E7619E55-6B04-4218-BF97-E12C7A6BDDDD}" path="Business_Protected_No_DIV_Yes.tcKDTest" />
+			<child name="Business_Protected_Yes_DIV_Yes" key="{704E3621-0B0C-4095-9617-AF81A239AA13}" path="Business_Protected_Yes_DIV_Yes.tcKDTest" />
+			<child name="RES_Protected_Yes_comsOut_Yes" key="{4CA8B938-AC09-4429-96A1-31EC0BD7B581}" path="RES_Protected_Yes_comsOut_Yes.tcKDTest" />
+			<child name="Reset_mobile_protected_during_registration" key="{BB31EB61-A16B-43AB-A35E-5E373719D361}" path="Reset_mobile_protected_during_registration.tcKDTest" />
+		</folder>
+		<folder name="Login Page">
+			<child name="Forgot_Password" key="{087F7CE2-A6A0-47D0-A58E-69BD15956238}" path="Forgot_Password.tcKDTest" />
+			<child name="Forgot_Email" key="{0AAD4CAB-51AA-405A-A4B8-57AD0DD1C93B}" path="Forgot_Email.tcKDTest" />
+			<child name="Re_Set_MobileNumber_While_Login" key="{964FBB17-4BFF-4969-873B-B569687E20F5}" path="Re_Set_MobileNumber_While_Login.tcKDTest" />
+			<child name="Unlock_Account_Residental" key="{D16F3424-1F4B-408F-A851-E87579822775}" path="Unlock_Account_Residental.tcKDTest" />
+			<child name="Forgot_Password_customer_Enter_Wrong_Phone_Number" key="{13BDC95A-BF50-4775-AA0A-7D6F3C296C72}" path="Forgot_Password_customer_Enter_Wrong_Phone_Number.tcKDTest" />
+			<child name="Forgot_Password_customer_Enter_Wrong_PIN" key="{6E4EA9D9-660C-43E0-BEDC-A70314DA6938}" path="Forgot_Password_customer_Enter_Wrong_PIN.tcKDTest" />
+			<child name="Unlock_Account_Business" key="{80B2DB98-3390-4533-B6C7-4F7FD10E387E}" path="Unlock_Account_Business.tcKDTest" />
+			<child name="Forgot_mail_for_Protected_Customer_with_PIN" key="{4A445E40-7C21-47E9-A21C-C4B82941E5AD}" path="Forgot_mail_for_Protected_Customer_with_PIN.tcKDTest" />
+			<child name="Forgot_mail_in_info_icon_in_email_addres" key="{C23C08B8-8559-4D5D-8A94-9AB1D6E6C49E}" path="Forgot_mail_in_info_icon_in_email_addres.tcKDTest" />
+			<child name="Re_Set_Mobile_Number_while_Login_with_PIN_Protected_Customer" key="{E1B7EEFB-07FF-41E8-B422-6D2A9D59300C}" path="Re_Set_Mobile_Number_while_Login_with_PIN_Protected_Customer.tcKDTest" />
+			<child name="Enter_Wrong_OTP_thrice" key="{C07A646F-6BFD-47A5-B475-A0F07184FCE4}" path="Enter_Wrong_OTP_thrice.tcKDTest" />
+			<child name="Resend_OTP_thrice" key="{E4B8AA0F-7DF9-4154-B650-A8E096066A80}" path="Resend_OTP_thrice.tcKDTest" />
+			<child name="Login_with_Protected_customer_with_Comms_opt_out_Yes" key="{6CA71752-1BF3-4AD8-8EB9-4A183494F837}" path="Login_with_Protected_customer_with_Comms_opt_out_Yes.tcKDTest" />
+			<child name="Enter_wrong_PIN_thrice" key="{E98494EF-3BE5-4869-BFF9-F1CCA71B028A}" path="Enter_wrong_PIN_thrice.tcKDTest" />
+		</folder>
+		<folder name="Help Page">
+			<child name="Submit_Enquiry_Without_Attachment" key="{9375A2C1-6BFD-4BCF-96A2-615C4E61CF4E}" path="Submit_Enquiry_Without_Attachment.tcKDTest" />
+			<child name="Submit_SelfMeter_Form" key="{0471E503-2620-42FA-B55B-68786B2D1AD4}" path="Submit_SelfMeter_Form.tcKDTest" />
+			<child name="Submit_Enquiry_With_Attachment" key="{906D71B9-B403-49C9-AE64-D3B5B1274EF0}" path="Submit_Enquiry_With_Attachment.tcKDTest" />
+			<child name="Help_topics" key="{2F32DB5B-DE9E-4DDF-9B7E-62C81A3709AF}" path="Help_topics.tcKDTest" />
+			<child name="Add_an_attachment_sent_text_for_an_existing_enquiry" key="{0A2835EA-A228-40A4-9956-580688A35928}" path="Add_an_attachment_sent_text_for_an_existing_enquiry.tcKDTest" />
+			<child name="Submit_Enquiry_For_Linking_Account" key="{671C6D4E-9B10-413E-93C4-6C230158ADC0}" path="Submit_Enquiry_For_Linking_Account.tcKDTest" />
+		</folder>
+		<folder name="PaymentPlan">
+			<child name="SME_Paypayment_Plan" key="{83A92B47-F850-4D76-A901-5C39816DA930}" path="SME_Paypayment_Plan.tcKDTest" />
+			<child name="RES_Bank_Account_ELEC" key="{5776C742-78ED-47D0-96DF-F7D4F3D6B110}" path="RES_Bank_Account_ELEC.tcKDTest" />
+			<child name="Cancel_Payment_Plan" key="{E70C7AB4-F281-41C0-BE6E-3D269F9EA34A}" path="Cancel_Payment_Plan.tcKDTest" />
+			<child name="RES_Credit_Card_ELEC" key="{FB7E0022-9DA3-4ABC-BA22-D5F8700A9F38}" path="RES_Credit_Card_ELEC.tcKDTest" />
+			<child name="RES_Manual_Gas" key="{5989DE5B-E26F-4FB3-B68A-2DFDEC74AA89}" path="RES_Manual_Gas.tcKDTest" />
+			<child name="RES_PayPayl_Gas" key="{C4748443-E60D-4877-9B88-1FF4693819A6}" path="RES_PayPayl_Gas.tcKDTest" />
+			<child name="RES_SavedPayment_Gas" key="{7DA8A1EF-3392-4B79-80D1-877A08C3D2C6}" path="RES_SavedPayment_Gas.tcKDTest" />
+		</folder>
+		<folder name="Direct Debit">
+			<child name="NoDirectDebit_DF" key="{667B1BA8-FCE8-401D-A5EC-271D55DF111B}" path="NoDirectDebit_DF.tcKDTest" />
+			<child name="CreditCard_VISA_ELEC" key="{0DFF5995-BAD4-4D2A-8218-32C3C34F8B5B}" path="CreditCard_VISA_ELEC.tcKDTest" />
+			<child name="Credit_Card_MC_ELEC" key="{DD297251-F853-463C-9694-F8FB7211A340}" path="Credit_Card_MC_ELEC.tcKDTest" />
+			<child name="Credit_Card_AMEX_ELEC" key="{B16A0FBB-CD77-4478-92E0-2E53A47DBA66}" path="Credit_Card_AMEX_ELEC.tcKDTest" />
+			<child name="PayPal_Gas" key="{88C3391B-A4A8-4D96-96CE-3F13861E20E8}" path="PayPal_Gas.tcKDTest" />
+			<child name="Bank_Account_Gas" key="{428AC1A2-ADCC-4DD7-B220-3FD00D3F86C1}" path="Bank_Account_Gas.tcKDTest" />
+			<child name="Saved_Payment_Method_GAS" key="{A408A3BE-560F-440E-82A8-E851614F2178}" path="Saved_Payment_Method_GAS.tcKDTest" />
+		</folder>
+		<folder name="Usage">
+			<child name="ELEC_Usage" key="{2BB812A9-8B9D-41A2-B779-F1D6DF258DF5}" path="ELEC_Usage.tcKDTest" />
+			<child name="Gas_Usage" key="{4C9501BF-ED5F-4993-847E-A415415A5C35}" path="Gas_Usage.tcKDTest" />
+		</folder>
+		<folder name="Link Account">
+			<child name="Able_to_Link_Primary_Contact_" key="{41FFA982-8F4A-4CCD-90DD-9908745D6141}" path="Able_to_Link_Primary_Contact_.tcKDTest" />
+			<child name="Unlink_Account" key="{329EEAF1-26C5-4313-9EDD-53BBBB710C6D}" path="Unlink_Account.tcKDTest" />
+			<child name="Link_Account_Business" key="{548E4594-9068-4E05-A708-192C809769E5}" path="Link_Account_Business.tcKDTest" />
+			<child name="Protected_Customer_Link_Normal_Account" key="{B1BE67F8-E9B3-4D33-9A1C-7D13091F8397}" path="Protected_Customer_Link_Normal_Account.tcKDTest" />
+			<child name="Normal_Customer_Link_Protected_Account" key="{044B5E53-1B0E-4F03-BBFA-49719919596A}" path="Normal_Customer_Link_Protected_Account.tcKDTest" />
+			<child name="Unable_to_Link_Non_Primary_Contact" key="{F9149F55-743E-443F-A2B0-9F25E606A14E}" path="Unable_to_Link_Non_Primary_Contact.tcKDTest" />
+			<child name="Unable_to_link_the_contact_if_signatory_is_disabled" key="{A5412763-7B43-4E23-8FB5-EBD41B34AE18}" path="Unable_to_link_the_contact_if_signatory_is_disabled.tcKDTest" />
+			<child name="Unable_to_Link_the_contact_linked_customer_not_matich_base_customer" key="{61150579-C0D9-48D8-B092-27EE81F57B75}" path="Unable_to_Link_the_contact_linked_customer_not_matich_base_customer.tcKDTest" />
+			<child name="Mutiple_Customers_Can_link_same_res_SME_customer_accounts" key="{5B577329-2415-41BF-97FF-EC3ACE41FD5C}" path="Mutiple_Customers_Can_link_same_res_SME_customer_accounts.tcKDTest" />
+		</folder>
+		<folder name="Update_Billing_Delivery">
+			<child name="Email_to_Paper" key="{B2F94CB5-67DC-45F9-B509-14B85BA315B5}" path="Email_to_Paper.tcKDTest" />
+			<child name="Paper_to_Email" key="{BC888722-70C9-4815-BCFA-67F1180B13C3}" path="Paper_to_Email.tcKDTest" />
+			<child name="Update_Mailing_address_using_service_address" key="{EA5A5D2D-237A-4C10-B751-AD56A2588B4D}" path="Update_Mailing_address_using_service_address.tcKDTest" />
+		</folder>
+		<folder name="Update_Marketing_Preferences">
+			<child name="Email_to_Post" key="{9BFC22F7-6D77-4B26-A196-E527E46BFCAC}" path="Email_to_Post.tcKDTest" />
+			<child name="Post_to_Email" key="{4BDAC2EF-947E-40A7-95C8-E3424BDB24AD}" path="Post_to_Email.tcKDTest" />
+			<child name="EmailorPost_to_Default" key="{709AF52C-C546-4C27-9F0A-E34626FF873A}" path="EmailorPost_to_Default.tcKDTest" />
+		</folder>
+		<folder name="CheckOut Flows">
+			<child name="Add_Property" key="{E6D0BE70-D8D0-4FAF-86CC-DDD34EB7AC54}" path="Add_Property.tcKDTest" />
+			<child name="Add_Fuel_Type" key="{9A4A988E-A5DB-4529-8EAA-1D69F762552F}" path="Add_Fuel_Type.tcKDTest" />
+			<child name="Moving_Home" key="{BF439C42-A032-4401-977C-E95DE3194939}" path="Moving_Home.tcKDTest" />
+			<child name="Add_Fuel_Type_For_DualFuel_Customer" key="{CE3477B0-E40A-4D40-8AD8-51E9C5FDC053}" path="Add_Fuel_Type_For_DualFuel_Customer.tcKDTest" />
+			<child name="Add_Fuel_QLD_Customer" key="{51F72C55-8819-4702-9D16-FFCDD2A25376}" path="Add_Fuel_QLD_Customer.tcKDTest" />
+			<child name="Add_Fuel_WA_Customer" key="{30F730BE-209F-4006-9E0A-C8159C8D4F5F}" path="Add_Fuel_WA_Customer.tcKDTest" />
+		</folder>
+		<child name="Payment_Extension" key="{C4E97501-64EA-499E-8CE1-E97338C97F4E}" path="Payment_Extension.tcKDTest" />
+		<child name="View_Bill_and_view_detailed_bill" key="{F8E0A069-A65B-4A50-842A-5E8A6141F051}" path="View_Bill_and_view_detailed_bill.tcKDTest" />
+		<child name="Account_Balance_Validation" key="{A9077490-3048-4565-89E7-642D288AC1A5}" path="Account_Balance_Validation.tcKDTest" />
+	</children>
+</Root>
