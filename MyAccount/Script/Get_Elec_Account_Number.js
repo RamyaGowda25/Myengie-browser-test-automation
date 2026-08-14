@@ -15,7 +15,7 @@
 
   // 2. Find the row that contains the word 'Electricity'
   // Then, find the first text element within that row that contains a '#'
-  let electricityRow = page.WaitElement("//div[contains(., 'Electricity')]", 10000);
+  let electricityRow = page.WaitElement("//div[contains(., 'Electricity')]", 20000);
 
   if (electricityRow.Exists) {
     // 3. Extract the account number text from within that row

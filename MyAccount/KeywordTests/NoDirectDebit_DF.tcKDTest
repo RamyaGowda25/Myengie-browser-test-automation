@@ -232,6 +232,20 @@
 			<Operation Type="{206B0810-0B42-45AB-90F5-9F8DF0D669D2}">
 				<Data Description="Runs a script routine." TestName="PaymentMethod_DF_HUBCX" Unit="PaymentMethod_DF_Account_HUBCX" />
 			</Operation>
+			<Operation Type="{5B065688-A7F9-41DE-BA45-BF23B8116C41}">
+				<Data Comment="*Validation of SF" />
+			</Operation>
+			<Operation Type="{575D0372-CCEB-4D0F-AFE8-D2004F108913}">
+				<Data Description="Simulates one or several keypresses." Action="Keys">
+					<Parameters LangId="{90F89436-9452-4F95-9882-6B5210079F13}">
+						<Parameter Name="Keys" DefVarType="8" VarType="8" ValueType="6" ValueValue="^[Tab]" />
+					</Parameters>
+					<ObjectSyntax LangId="{90F89436-9452-4F95-9882-6B5210079F13}" Code="Aliases.browser.BrowserWindow;" />
+				</Data>
+			</Operation>
+			<Operation Type="{206B0810-0B42-45AB-90F5-9F8DF0D669D2}">
+				<Data Description="Runs a script routine." TestName="Salesforce_NoDirectDebit_DF_DD" Unit="SF_DD_NoDirectDebit_DF" />
+			</Operation>
 		</Children>
 	</TestData>
 	<Variables Version="4" Key="{A5FC84A1-036F-4A9E-84E4-C01BA228B148}">

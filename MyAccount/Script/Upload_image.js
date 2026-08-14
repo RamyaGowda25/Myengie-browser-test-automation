@@ -3,7 +3,7 @@
     let page = browser.Page("*engie.com.au*");
 
       // 1. Locate all potential upload targets (labels or image icons)
-      let uploadImgPath="C:\\Users\\JN6484\\OneDrive - ENGIE\\Documents\\TestComplete 15 Projects\\MyEngie\\Upload images\\file_PNG_3MB.png";
+      let uploadImgPath="C:\\Automation\\MyEngie\\Upload images\\file_PNG_3MB.png";
     let targetXpath = "//label[text()='Browse'] | //img[@title='Click to make attachment (Maximum 5 attachment allowed).']";
     let targetElementsArr = page.EvaluateXPath(targetXpath);
     

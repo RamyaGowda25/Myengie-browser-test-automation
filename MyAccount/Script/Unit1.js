@@ -1,71 +1,58 @@
-﻿function verifyBillingDeliveryMethod() {
-   let browser = Sys.Browser("chrome");
-    let page = browser.Page("*engie.com.au*");
+﻿function SelectGasAccountNumber() 
+{ 
+  Log.Message("Initializing high-speed account processing sequence...");
   
-  // 1. Strict lookup matching 'EP' for Email and 'P' for Post only on the visible screen panel
-  var propNames = ["value", "VisibleOnScreen"];
-  var emailValues = ["EP", true]; 
-  var postValues = ["P", true];
-var emailAddress="ramya@gmail.com"
-  // 2. Find the visible elements down to 100 hierarchy levels
-  var emailRadioInput = page.FindChild(propNames, emailValues, 100);
-  var postRadioInput = page.FindChild(propNames, postValues, 100);
-  // Fallback to ID wildcards if value matching fails
+  // 1. Lock onto Chrome and the active page tab directly
+  let browser = Sys.Browser("chrome");
+  let page = browser.Page("https://newdawnpreprod.myengie.engie.com.au/direct-debit"); 
   
-  if (!emailRadioInput.Exists || !postRadioInput.Exists) {
-    emailRadioInput = page.FindChild(["idStr", "VisibleOnScreen"], ["deliveryTypeEP_*", true], 100);
-    postRadioInput = page.FindChild(["idStr", "VisibleOnScreen"], ["deliveryTypeP_*", true], 100);
-  }
-
-  if (!emailRadioInput.Exists || !postRadioInput.Exists) {
-    Log.Error("Action Failed: Cannot toggle selection. Radio buttons not found on screen.");
-    return;
-  }
-
-  // 2. Read current states
-  var isEmailChecked = emailRadioInput.checked || emailRadioInput.wChecked;
-  var isPostChecked = postRadioInput.checked || postRadioInput.wChecked;
-
-  // 3. Conditional Toggle Logic
-  if (isPostChecked) {
-    Log.Message("Current state is 'By Post'. Switching selection to 'By Email'...");
-    emailRadioInput.Click(); 
+  // 2. RAPID DE-SELECT ALL ACCOUNTS
+ page.EvaluateXPath("//*[@id='cancel_btn']")[0].Click();
+    
+  // Short 400ms pause to let browser check-states physically release
+  aqUtils.Delay(400);
+  
+  // 3. FIX: HIGH-SPEED DIRECT INDEX GAS CHECKBOX SELECTION
+  // Using EvaluateXPath bypasses TestComplete's slow search loop completely to find the box in milliseconds!
+  var gasCheckboxXPath = "//tr[descendant::*[text()='Gas' or contains(text(), 'Gas')]]//input[@type='checkbox'] | //tr[contains(., 'Gas')]//input[@type='checkbox']";
+  var gasCheckboxElements = page.EvaluateXPath(gasCheckboxXPath);
+  
+      let targetCheckbox = gasCheckboxElements[0]; // Unwrap the first element in the array match
+      
+ // Forces immediate physical alignment to prevent rendering lags
+      targetCheckbox.ScrollIntoView(true);
+      aqUtils.Delay(200);
+      Log.Message("Clicking Gas row checkbox natively...");
+      targetCheckbox.Click();  
+  
+     
+  // 4. HIGH-SPEED GAS ACCOUNT NUMBER EXTRACTION  
+  var accountCellXPath = "//tr[descendant::*[text()='Gas']]//td[string-length(normalize-space(text()))=8] | //td[contains(text(), 'Gas')]/following-sibling::td";
+  var accountCellElements = page.EvaluateXPath(accountCellXPath);
+  
+  if (accountCellElements !== null && accountCellElements.length > 0) { 
+      var liveAccountNumber = accountCellElements[0].contentText.trim();
+      Log.Message("Gas Account Number Retrieved: " + liveAccountNumber);
+      
+      // Save output safely to global project variable
+      Project.Variables.DirectDebitGasAccountNumber = liveAccountNumber; 
   } 
-  else if (isEmailChecked) {
-    Log.Message("Current state is 'By Email'. Switching selection to 'By Post'...");
-    postRadioInput.Click();
-  } 
+
+  // 5. RAPID CLICK "BUTTON UPDATE ACCOUNT"
+  var updateAccountButton = page.FindChildByXPath("//*[@id='update_account']", true);
   
-  // Check if the 'By email' option exists and is selected
-  if (emailRadioInput.Exists && emailRadioInput.Checked) {
-    Log.Message("'By email' is selected. Proceeding with email entry.");
-    
-    // Define the XPaths
-    var emailXPath = "//input[contains(@class, 'deliveryemail')]";
-    var confirmXPath = "//input[contains(@class, 'confirmdeliveryemail')]";
-    
-    // Execute XPath evaluation on the page object
-    var emailResult = page.EvaluateXPath(emailXPath);
-    var confirmResult = page.EvaluateXPath(confirmXPath);
-    
-    // Handle Email Input
-    if (emailResult !== null && emailResult.length > 0) {
-      var emailInput = emailResult[0]; // Extract object array element
-      emailInput.Click();
-      mailInput.Keys("^a");   // Ctrl + A to select all
-      emailInput.Keys("[BS]");  // Capitalized BS or Backspace to delete
-      emailInput.Keys(emailAddress); 
-      emailInput.Keys(emailAddress);
-      Log.Message("Main Email entered via XPath successfully.");
-    } 
-    
-    // Handle Confirm Email Input
-    if (confirmResult !== null && confirmResult.length > 0) {
-      var confirmEmailInput = confirmResult[0]; // Extract object array element
-      confirmEmailInput.Click();
-      confirmEmailInput.Keys(emailAddress);
-      Log.Message("Confirmation Email entered via XPath successfully.");
-    }  
-  } 
- }
-  
+  if (updateAccountButton && updateAccountButton.Exists) {
+      Log.Message("Update Account button isolated instantly via ID. Executing rapid click...");
+      updateAccountButton.Click();
+  } else {
+      Log.Warning("Update Account button ID not resolved. Attempting snippet class fallback...");
+      // Secondary fallback matching the explicit drupal selector attribute from your snippet
+      var fallbackBtn = page.FindChildByXPath("//button[@data-drupal-selector='edit-update-account']", true);
+      if (fallbackBtn && fallbackBtn.Exists) {
+          fallbackBtn.Click();
+      } 
+      }
+  // 6. PAGE STABILIZATION TIMEOUT
+  aqUtils.Delay(3000); 
+//  Log.Message("Next form layout view initialized successfully.");
+}

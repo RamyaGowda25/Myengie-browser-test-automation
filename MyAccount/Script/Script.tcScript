@@ -26,6 +26,15 @@
 				<child name="PaymentMethod_Gas_Account_HUBCX" key="{18992733-C980-444F-B666-4C1B64619671}" path="PaymentMethod_Gas_Account_HUBCX.js" />
 				<child name="PaymentMethod_DF_Account_HUBCX" key="{0B857E6D-3336-42D9-AB62-A32397B012C5}" path="PaymentMethod_DF_Account_HUBCX.js" />
 			</folder>
+			<folder name="SF Validation">
+				<child name="SF_DD_PayPal_Gas" key="{5D87D875-A87E-48BA-8449-12C55849830F}" path="SF_DD_PayPal_Gas.js" />
+				<child name="SF_DD_Bank_Gas" key="{7BB63A5C-4E86-4ED6-AB04-7D81E3EA7529}" path="SF_DD_Bank_Gas.js" />
+				<child name="SF_DD_AMEX_ELEC" key="{FEC6C750-FD5E-41F9-A75A-14BB4B48157E}" path="SF_DD_AMEX_ELEC.js" />
+				<child name="SF_DD_NoDirectDebit_DF" key="{6D8E639A-2B42-4496-93AA-1664CF3CF36E}" path="SF_DD_NoDirectDebit_DF.js" />
+				<child name="SF_DD_MC_ELEC" key="{E48F16F3-08DE-416D-82D7-B5DFA544BC80}" path="SF_DD_MC_ELEC.js" />
+				<child name="SF_DD_VISA_ELEC" key="{3ED22F34-3D0F-46CE-87C3-2FAA31D90C0D}" path="SF_DD_VISA_ELEC.js" />
+				<child name="SF_DD_SavedPD_Gas" key="{84673168-14BB-4C4C-9C1D-58C650F9D7A4}" path="SF_DD_SavedPD_Gas.js" />
+			</folder>
 			<child name="Get_DirectDebitElecAccount" key="{7880685F-5702-40B0-B753-AE65C12E4C24}" path="Get_DirectDebitElecAccount.js" />
 			<child name="Get_DirectDebitGasAccount" key="{187AE3FD-A5A9-487A-BA51-152A53F0EA15}" path="Get_DirectDebitGasAccount.js" />
 			<child name="Get_DirectDebitDFAccounts" key="{82C0CFF7-1B48-42BD-B1BE-9E180A3DAF5C}" path="Get_DirectDebitDFAccounts.js" />
@@ -36,6 +45,13 @@
 			<child name="Submit_Enquiry_Gas_Account" key="{F09B99E4-5444-4BE1-AD4D-FE04629D03A5}" path="Submit_Enquiry_Gas_Account.js" />
 		</folder>
 		<folder name="One Off Payments">
+			<folder name="SF Validation">
+				<child name="OneOffPayment_MC_ELEC_Validation_SF" key="{09DF90AD-30BC-4EDE-B51C-270CAFD6B987}" path="OneOffPayment_MC_ELEC_Validation_SF.js" />
+				<child name="OneOffPayment_PayPal_Gas_Validation_SF" key="{A682A6AF-2CC9-43BE-9DAC-DAD6C68E1F41}" path="OneOffPayment_PayPal_Gas_Validation_SF.js" />
+				<child name="OneOffPayment_Saved_Gas_Validation_SF" key="{04E7D69C-607C-4824-A6BF-CADB6CAF9A92}" path="OneOffPayment_Saved_Gas_Validation_SF.js" />
+				<child name="OneOffPayment_AMEX_ELEC_Validation_SF" key="{3F806FAF-49A4-47CA-844F-EC720C1ED4A5}" path="OneOffPayment_AMEX_ELEC_Validation_SF.js" />
+				<child name="OneOffPayment_VISA_ELEC_Validation_SF" key="{F86CC742-8D97-4204-A07E-47BD23930216}" path="OneOffPayment_VISA_ELEC_Validation_SF.js" />
+			</folder>
 			<child name="OneOffPayment_ELEC_validation_HUBCX" key="{129E1343-DE52-466D-AA42-0FCF29881889}" path="OneOffPayment_ELEC_validation_HUBCX.js" />
 			<child name="OneOffPayments_Gas_Validation_HUBCX" key="{8864CD76-1A81-4F6B-83E8-65C517B4F652}" path="OneOffPayments_Gas_Validation_HUBCX.js" />
 		</folder>
@@ -43,7 +59,14 @@
 			<child name="PaymentPlan_ELEC_HUBCX" key="{13818D52-FDB1-46F4-9E65-28D7EB4842DE}" path="PaymentPlan_ELEC_HUBCX.js" />
 			<child name="PaymentPlan_GAS_HUBCX" key="{915CE92F-E223-4657-AE9B-BC0052024035}" path="PaymentPlan_GAS_HUBCX.js" />
 		</folder>
-		<child name="BilliDeliveryByPost" key="{B5D518C0-0829-4A14-A46B-70CB409C448D}" path="BilliDeliveryByPost.js" />
-		<child name="Unit1" key="{FBACDCEF-869D-4B6F-96E6-925D474574DF}" path="Unit1.js" />
+		<folder name="Account Balance Validation">
+			<child name="Account_Balance_Validation" key="{0E070BAA-EEBF-4429-82BC-4853CC0D3BB8}" path="Account_Balance_Validation.js" />
+			<child name="Account_Balance_Validation_HUB" key="{928D0366-BEA5-4646-B4F8-8C2A722DD265}" path="Account_Balance_Validation_HUB.js" />
+		</folder>
+		<folder name="Bill Delivery Update">
+			<child name="BilliDeliveryUpdate_Gas" key="{B5D518C0-0829-4A14-A46B-70CB409C448D}" path="BilliDeliveryUpdate_Gas.js" />
+			<child name="BilliDeliveryUpdate_Electricity" key="{4959CC69-ABD7-41C8-863F-9FA2B2D93A1B}" path="BilliDeliveryUpdate_Electricity.js" />
+		</folder>
+		<child name="Unit1" key="{9D333C2E-3D54-4CE5-9E8A-9842F1C9ED2B}" path="Unit1.js" />
 	</children>
 </Root>

@@ -96,10 +96,6 @@
 			<child name="Bank_Account_Gas" key="{428AC1A2-ADCC-4DD7-B220-3FD00D3F86C1}" path="Bank_Account_Gas.tcKDTest" />
 			<child name="Saved_Payment_Method_GAS" key="{A408A3BE-560F-440E-82A8-E851614F2178}" path="Saved_Payment_Method_GAS.tcKDTest" />
 		</folder>
-		<folder name="Usage">
-			<child name="ELEC_Usage" key="{2BB812A9-8B9D-41A2-B779-F1D6DF258DF5}" path="ELEC_Usage.tcKDTest" />
-			<child name="Gas_Usage" key="{4C9501BF-ED5F-4993-847E-A415415A5C35}" path="Gas_Usage.tcKDTest" />
-		</folder>
 		<folder name="Link Account">
 			<child name="Able_to_Link_Primary_Contact_" key="{41FFA982-8F4A-4CCD-90DD-9908745D6141}" path="Able_to_Link_Primary_Contact_.tcKDTest" />
 			<child name="Unlink_Account" key="{329EEAF1-26C5-4313-9EDD-53BBBB710C6D}" path="Unlink_Account.tcKDTest" />
@@ -111,26 +107,12 @@
 			<child name="Unable_to_Link_the_contact_linked_customer_not_matich_base_customer" key="{61150579-C0D9-48D8-B092-27EE81F57B75}" path="Unable_to_Link_the_contact_linked_customer_not_matich_base_customer.tcKDTest" />
 			<child name="Mutiple_Customers_Can_link_same_res_SME_customer_accounts" key="{5B577329-2415-41BF-97FF-EC3ACE41FD5C}" path="Mutiple_Customers_Can_link_same_res_SME_customer_accounts.tcKDTest" />
 		</folder>
-		<folder name="Update_Billing_Delivery">
-			<child name="Email_to_Paper" key="{B2F94CB5-67DC-45F9-B509-14B85BA315B5}" path="Email_to_Paper.tcKDTest" />
-			<child name="Paper_to_Email" key="{BC888722-70C9-4815-BCFA-67F1180B13C3}" path="Paper_to_Email.tcKDTest" />
-			<child name="Update_Mailing_address_using_service_address" key="{EA5A5D2D-237A-4C10-B751-AD56A2588B4D}" path="Update_Mailing_address_using_service_address.tcKDTest" />
-		</folder>
-		<folder name="Update_Marketing_Preferences">
-			<child name="Email_to_Post" key="{9BFC22F7-6D77-4B26-A196-E527E46BFCAC}" path="Email_to_Post.tcKDTest" />
-			<child name="Post_to_Email" key="{4BDAC2EF-947E-40A7-95C8-E3424BDB24AD}" path="Post_to_Email.tcKDTest" />
-			<child name="EmailorPost_to_Default" key="{709AF52C-C546-4C27-9F0A-E34626FF873A}" path="EmailorPost_to_Default.tcKDTest" />
-		</folder>
-		<folder name="CheckOut Flows">
-			<child name="Add_Property" key="{E6D0BE70-D8D0-4FAF-86CC-DDD34EB7AC54}" path="Add_Property.tcKDTest" />
-			<child name="Add_Fuel_Type" key="{9A4A988E-A5DB-4529-8EAA-1D69F762552F}" path="Add_Fuel_Type.tcKDTest" />
-			<child name="Moving_Home" key="{BF439C42-A032-4401-977C-E95DE3194939}" path="Moving_Home.tcKDTest" />
-			<child name="Add_Fuel_Type_For_DualFuel_Customer" key="{CE3477B0-E40A-4D40-8AD8-51E9C5FDC053}" path="Add_Fuel_Type_For_DualFuel_Customer.tcKDTest" />
-			<child name="Add_Fuel_QLD_Customer" key="{51F72C55-8819-4702-9D16-FFCDD2A25376}" path="Add_Fuel_QLD_Customer.tcKDTest" />
-			<child name="Add_Fuel_WA_Customer" key="{30F730BE-209F-4006-9E0A-C8159C8D4F5F}" path="Add_Fuel_WA_Customer.tcKDTest" />
+		<folder name="Bill Media Update">
+			<child name="Bill_Media_Update_ELEC" key="{B00324F6-DED7-498D-B868-EE4E594DCC05}" path="Bill_Media_Update_ELEC.tcKDTest" />
+			<child name="Bill_Media_Update_gas" key="{E8462E1A-8AB0-437B-A59B-EE34E4184EEE}" path="Bill_Media_Update_gas.tcKDTest" />
 		</folder>
 		<child name="Payment_Extension" key="{C4E97501-64EA-499E-8CE1-E97338C97F4E}" path="Payment_Extension.tcKDTest" />
 		<child name="View_Bill_and_view_detailed_bill" key="{F8E0A069-A65B-4A50-842A-5E8A6141F051}" path="View_Bill_and_view_detailed_bill.tcKDTest" />
-		<child name="Account_Balance_Validation" key="{A9077490-3048-4565-89E7-642D288AC1A5}" path="Account_Balance_Validation.tcKDTest" />
+		<child name="Account_Balance_Validation_from_Engie_HUB" key="{D6CED1FB-9305-46C4-AFA2-557FF9338787}" path="Account_Balance_Validation_from_Engie_HUB.tcKDTest" />
 	</children>
 </Root>

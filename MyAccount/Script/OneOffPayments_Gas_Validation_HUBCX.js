@@ -29,7 +29,7 @@
             goToCustomerBtn.ScrollIntoView();
             aqUtils.Delay(300);
             goToCustomerBtn.Click();
-            aqUtils.Delay(10000);
+            aqUtils.Delay(20000);
         }
         //Click on Financial Tab 
         let financialTab="//*[@id='tabViewId']/ul/li[2]/a";
@@ -64,7 +64,7 @@
     } 
     
     // 1. Define the collection of approved payment types for the validation checkpoint
-    let validPaymentMethods = ["Paypal", "VISA", "MASTER", "AMEX"];
+    let validPaymentMethods = ["Paypal", "VISA", "Mastercard", "American Express Payment"];
 
     // 2. TARGETED XPATH: Locate the dynamic text element value under the 'Receipt Payment Method' column layout section
     // It targets any span or cell located near the descriptive heading row block

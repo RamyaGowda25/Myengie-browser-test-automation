@@ -29,7 +29,7 @@
             goToCustomerBtn.ScrollIntoView();
             aqUtils.Delay(300);
             goToCustomerBtn.Click();
-            aqUtils.Delay(10000);
+            aqUtils.Delay(20000);
         }
         //Click on Financial Tab 
         let financialTab="//*[@id='tabViewId']/ul/li[2]/a";

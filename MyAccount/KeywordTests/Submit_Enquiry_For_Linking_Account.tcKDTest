@@ -101,6 +101,14 @@
 			<Operation Type="{206B0810-0B42-45AB-90F5-9F8DF0D669D2}">
 				<Data Description="Runs a script routine." TestName="Automated_Login_With_OTP" Unit="OTP_Retrive_Flow" />
 			</Operation>
+			<Operation Type="{6A1B4CEE-4FB8-46E2-BFBD-403C84342301}">
+				<Data Description="Delays the test execution for the specified time period.">
+					<Parameters LangId="{90F89436-9452-4F95-9882-6B5210079F13}">
+						<Parameter Name="ms" DefVarType="3" VarType="3" ValueType="1" ValueValue="5000" />
+						<Parameter Name="Str" DefVarType="8" DefValueType="6" DefValueValue="" VarType="8" ValueType="6" ValueValue="" />
+					</Parameters>
+				</Data>
+			</Operation>
 			<Operation Type="{575D0372-CCEB-4D0F-AFE8-D2004F108913}">
 				<Data Description="Waits until the browser loads the page and is ready to accept user input." Action="Wait">
 					<Parameters LangId="{90F89436-9452-4F95-9882-6B5210079F13}">

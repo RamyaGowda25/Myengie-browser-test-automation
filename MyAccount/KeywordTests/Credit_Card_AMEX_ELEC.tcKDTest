@@ -247,6 +247,22 @@
 			<Operation Type="{206B0810-0B42-45AB-90F5-9F8DF0D669D2}">
 				<Data Description="Runs a script routine." TestName="selectElectricityAndStoreNumber" Unit="Get_Elec_Account_Number" />
 			</Operation>
+			<Operation Type="{6A1B4CEE-4FB8-46E2-BFBD-403C84342301}">
+				<Data Description="Delays the test execution for the specified time period.">
+					<Parameters LangId="{90F89436-9452-4F95-9882-6B5210079F13}">
+						<Parameter Name="ms" DefVarType="3" VarType="3" ValueType="1" ValueValue="5000" />
+						<Parameter Name="Str" DefVarType="8" DefValueType="6" DefValueValue="" VarType="8" ValueType="6" ValueValue="" />
+					</Parameters>
+				</Data>
+			</Operation>
+			<Operation Type="{575D0372-CCEB-4D0F-AFE8-D2004F108913}">
+				<Data Description="Pauses the script execution until the specified Web page is downloaded or until the specified time limit elapses." Action="Wait">
+					<Parameters LangId="{90F89436-9452-4F95-9882-6B5210079F13}">
+						<Parameter Name="WaitTime" DefVarType="3" DefValueType="1" DefValueValue="-1" VarType="3" ValueType="1" ValueValue="-1" />
+					</Parameters>
+					<ObjectSyntax LangId="{90F89436-9452-4F95-9882-6B5210079F13}" Code="Aliases.browser.MyEngieSignInPage;" />
+				</Data>
+			</Operation>
 			<Operation Type="{2F0A05A2-4ECD-47CE-A12B-9843A308F2DC}">
 				<Data Description="Checks whether the %p2 property of the %p1 object %p3 %p4.">
 					<Parameters LangId="{90F89436-9452-4F95-9882-6B5210079F13}">
@@ -318,6 +334,20 @@
 			</Operation>
 			<Operation Type="{206B0810-0B42-45AB-90F5-9F8DF0D669D2}">
 				<Data Description="Runs a script routine." TestName="PaymentMethod_ELEC_HUBCX" Unit="PaymentMethod_ELEC_Account_HUBCX" />
+			</Operation>
+			<Operation Type="{5B065688-A7F9-41DE-BA45-BF23B8116C41}">
+				<Data Comment="*Validation of SF" />
+			</Operation>
+			<Operation Type="{575D0372-CCEB-4D0F-AFE8-D2004F108913}">
+				<Data Description="Simulates one or several keypresses." Action="Keys">
+					<Parameters LangId="{90F89436-9452-4F95-9882-6B5210079F13}">
+						<Parameter Name="Keys" DefVarType="8" VarType="8" ValueType="6" ValueValue="^[Tab]" />
+					</Parameters>
+					<ObjectSyntax LangId="{90F89436-9452-4F95-9882-6B5210079F13}" Code="Aliases.browser.BrowserWindow;" />
+				</Data>
+			</Operation>
+			<Operation Type="{206B0810-0B42-45AB-90F5-9F8DF0D669D2}">
+				<Data Description="Runs a script routine." TestName="Salesforce_Amex_ELEC_DD" Unit="SF_DD_AMEX_ELEC" />
 			</Operation>
 		</Children>
 	</TestData>

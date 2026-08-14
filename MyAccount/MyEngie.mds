@@ -275,7 +275,7 @@
 				<environments activeCloud="SWT" />
 				<children />
 			</testItem>
-			<testItem name="Account_Balance_Validation" key="{7836E844-E23E-41E4-91E0-7173D3C0CEEC}" group="False" parallel="False" enabled="False" load="False" testMoniker="KDT\{A9077490-3048-4565-89E7-642D288AC1A5}" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+			<testItem name="Account_Balance_Validation_from_Engie_HUB" key="{E997A427-F99B-403D-8C62-EDD0BB61C079}" group="False" parallel="False" enabled="True" load="False" testMoniker="KDT\{D6CED1FB-9305-46C4-AFA2-557FF9338787}" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
 				<testParameters />
 				<environments activeCloud="SWT" />
 				<children />
@@ -310,22 +310,17 @@
 					</testItem>
 				</children>
 			</testItem>
-			<testItem name="Bill_Delivery" key="{EE811E5E-EFF8-4E8A-B0B1-BA15572C3052}" group="True" parallel="False" enabled="False" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+			<testItem name="Bill_Delivery" key="{EE811E5E-EFF8-4E8A-B0B1-BA15572C3052}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
 				<testParameters />
 				<children>
-					<testItem name="Email_to_Paper" key="{5E085F08-472D-41B6-AB81-9EF8E3A5EB9B}" group="False" parallel="False" enabled="True" load="False" testMoniker="KDT\{B2F94CB5-67DC-45F9-B509-14B85BA315B5}" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+					<testItem name="Bill_Media_Update_ELEC" key="{3583D2A3-2DD7-40A0-8F04-0CF5A21E0046}" group="False" parallel="False" enabled="True" load="False" testMoniker="KDT\{B00324F6-DED7-498D-B868-EE4E594DCC05}" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
 						<testParameters />
-						<environments activeCloud="SWT" />
+						<environments activeCloud="CBT" />
 						<children />
 					</testItem>
-					<testItem name="Update_Mailing_address_using_service_address" key="{D0A99E1C-82D3-44EA-BC3E-1D33474B6221}" group="False" parallel="False" enabled="True" load="False" testMoniker="KDT\{EA5A5D2D-237A-4C10-B751-AD56A2588B4D}" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+					<testItem name="Bill_Media_Update_gas" key="{763B3490-BBE9-45D6-8B01-CAC1119DE329}" group="False" parallel="False" enabled="True" load="False" testMoniker="KDT\{E8462E1A-8AB0-437B-A59B-EE34E4184EEE}" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
 						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="Paper_to_Email" key="{8FB9AADF-F916-423E-8FBB-8D94498B9339}" group="False" parallel="False" enabled="True" load="False" testMoniker="KDT\{BC888722-70C9-4815-BCFA-67F1180B13C3}" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
+						<environments activeCloud="CBT" />
 						<children />
 					</testItem>
 				</children>
@@ -556,11 +551,27 @@
 				<Variable Name="my_energy_Account_number" Type="String" Local="True">
 					<DefValue />
 				</Variable>
+				<Variable Name="StoreAccountBalance" Type="String" Local="True">
+					<DefValue />
+				</Variable>
+				<Variable Name="SelectedElectricityAccountNumber" Type="String" Local="True">
+					<DefValue />
+				</Variable>
+				<Variable Name="DD_Bank" Type="DB Table" Local="False">
+					<DefValue Kind="{94ACFE87-8AC5-4220-8268-52323FBEB9FB}">
+						<ConnectionInfo FileName="..\..\Test Data.xlsx" Table="Browser$" HasColumnNames="True" />
+					</DefValue>
+				</Variable>
+				<Variable Name="DD_Bank1" Type="DB Table" Local="False">
+					<DefValue Kind="{94ACFE87-8AC5-4220-8268-52323FBEB9FB}">
+						<ConnectionInfo FileName="..\..\Test Data.xlsx" Table="Browser$" HasColumnNames="True" />
+					</DefValue>
+				</Variable>
 			</Items>
 		</data>
 	</variables>
 	<settings key="{DCBDBB5F-8617-4F9D-B4EF-0F371169DE86}">
-		<settingsVersion value="15.81" />
+		<settingsVersion value="15.83" />
 		<setting name="AgOpenApp_ExtendedSilverlightObjectTree" type="1" value="False" />
 		<setting name="ApplicationHangingProcessFilterMode" type="6" rowIndex="4" colIndex="0">
 			<columns>
@@ -1214,6 +1225,13 @@
 		</setting>
 		<setting name="Visualizer_UseDuringPlayback" type="1" value="True" />
 		<setting name="Visualizer_UseDuringRecording" type="1" value="True" />
+		<setting name="VOD_AcceptedProcesses" type="6" rowIndex="-1" colIndex="1">
+			<columns>
+				<column type="1" enabled="True" />
+				<column type="5" enabled="True" />
+			</columns>
+			<data />
+		</setting>
 		<setting name="VTAPIKey" type="5" value="" />
 		<setting name="WebCloudProvider" type="6" rowIndex="0" colIndex="0">
 			<columns>

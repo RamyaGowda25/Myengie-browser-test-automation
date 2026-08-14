@@ -6,7 +6,7 @@
     let paypalPage = browser.WaitPage("*://*paypal.com*", 40000); 
     if (paypalPage.Exists) { 
     
-    let emailField = paypalPage.WaitElement("//input[@id='email']", 10000); 
+    let emailField = paypalPage.WaitElement("//input[@id='email']", 30000); 
     let reviewScreenBtnXPath = "//button[contains(., 'Complete Purchase')] | //button[contains(., 'Agree & Pay Now')] | //button[contains(., 'Agree and Continue')]";
     let agreeBtn = paypalPage.WaitElement(reviewScreenBtnXPath, 10000); 
 
