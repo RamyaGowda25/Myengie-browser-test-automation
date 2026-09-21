@@ -10,7 +10,7 @@
 	<config language="{90F89436-9452-4F95-9882-6B5210079F13}" />
 	<testItems key="{CAB2EB48-5BCF-4461-B7FB-0784B809677E}" version="14">
 		<children>
-			<testItem name="Login Page" key="{0EC0816C-5B5E-4E71-AA64-244F36149D9E}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+			<testItem name="Login Page" key="{0EC0816C-5B5E-4E71-AA64-244F36149D9E}" group="True" parallel="False" enabled="False" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
 				<testParameters />
 				<children>
 					<testItem name="Forgot_Password" key="{08712D75-9020-47B2-A65F-CA4538AEFF9C}" group="False" parallel="False" enabled="True" load="False" testMoniker="KDT\{087F7CE2-A6A0-47D0-A58E-69BD15956238}" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
@@ -85,7 +85,7 @@
 					</testItem>
 				</children>
 			</testItem>
-			<testItem name="New Registration for Normal Customer" key="{0C02F4F2-91CC-4645-A441-158923E5E4EA}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+			<testItem name="New Registration for Normal Customer" key="{0C02F4F2-91CC-4645-A441-158923E5E4EA}" group="True" parallel="False" enabled="False" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
 				<testParameters />
 				<children>
 					<testItem name="New Registartion for Residential Customer" key="{09E0E465-1F1C-4EFA-9B79-8E1299931C4F}" group="False" parallel="False" enabled="True" load="False" testMoniker="KDT\{7DE17F55-4FDB-4E42-A1E6-BB0F76971903}" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
@@ -160,7 +160,7 @@
 					</testItem>
 				</children>
 			</testItem>
-			<testItem name="New Registration for Protected Customer" key="{F1582E58-E4D0-412B-8289-4040192B7AF7}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+			<testItem name="New Registration for Protected Customer" key="{F1582E58-E4D0-412B-8289-4040192B7AF7}" group="True" parallel="False" enabled="False" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
 				<testParameters />
 				<children>
 					<testItem name="RES_Protected_Yes_DIV_NO" key="{3FF0B9B1-D2F3-4AEA-A028-8CF7A3852F25}" group="False" parallel="False" enabled="True" load="False" testMoniker="KDT\{DF279B26-B6CC-4D7F-872B-20A1A2BE52A0}" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
@@ -195,7 +195,7 @@
 					</testItem>
 				</children>
 			</testItem>
-			<testItem name="Link Account" key="{7A001B7E-CFF6-4364-8E88-375B1214C182}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+			<testItem name="6" key="{7A001B7E-CFF6-4364-8E88-375B1214C182}" group="True" parallel="False" enabled="False" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
 				<testParameters />
 				<children>
 					<testItem name="Unable to perform Link Flagged Protected Customer" key="{FEB6D483-959F-49CA-9AF5-68B4694C9B6A}" group="False" parallel="False" enabled="True" load="False" testMoniker="KDT\{B1BE67F8-E9B3-4D33-9A1C-7D13091F8397}" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
@@ -230,7 +230,7 @@
 					</testItem>
 				</children>
 			</testItem>
-			<testItem name="My_Profile" key="{8906279D-CF46-49A8-8D81-4698321CC9A9}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+			<testItem name="My_Profile" key="{8906279D-CF46-49A8-8D81-4698321CC9A9}" group="True" parallel="False" enabled="False" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
 				<testParameters />
 				<children>
 					<testItem name="Update_Password" key="{830CF0C1-0041-4770-A8D3-3ECD64DEA7C5}" group="False" parallel="False" enabled="True" load="False" testMoniker="KDT\{0913E868-08F9-4725-B9C7-08D8AFBAFFE8}" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
@@ -265,35 +265,35 @@
 					</testItem>
 				</children>
 			</testItem>
-			<testItem name="Payment_Extension" key="{1FEC7F8D-56E3-4631-9612-3EEA456BF138}" group="False" parallel="False" enabled="True" load="False" testMoniker="KDT\{C4E97501-64EA-499E-8CE1-E97338C97F4E}" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+			<testItem name="Payment_Extension" key="{1FEC7F8D-56E3-4631-9612-3EEA456BF138}" group="False" parallel="False" enabled="False" load="False" testMoniker="KDT\{C4E97501-64EA-499E-8CE1-E97338C97F4E}" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
 				<testParameters />
 				<environments activeCloud="SWT" />
 				<children />
 			</testItem>
-			<testItem name="View_Bill_and_view_detailed_bill" key="{D9BBFCAF-527A-42D9-9C59-DC505F779E97}" group="False" parallel="False" enabled="True" load="False" testMoniker="KDT\{F8E0A069-A65B-4A50-842A-5E8A6141F051}" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+			<testItem name="View_Bill_and_view_detailed_bill" key="{D9BBFCAF-527A-42D9-9C59-DC505F779E97}" group="False" parallel="False" enabled="False" load="False" testMoniker="KDT\{F8E0A069-A65B-4A50-842A-5E8A6141F051}" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
 				<testParameters />
 				<environments activeCloud="SWT" />
 				<children />
 			</testItem>
-			<testItem name="Account_Balance_Validation_from_Engie_HUB" key="{E997A427-F99B-403D-8C62-EDD0BB61C079}" group="False" parallel="False" enabled="True" load="False" testMoniker="KDT\{D6CED1FB-9305-46C4-AFA2-557FF9338787}" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+			<testItem name="Account_Balance_Validation_from_Engie_HUB" key="{E997A427-F99B-403D-8C62-EDD0BB61C079}" group="False" parallel="False" enabled="False" load="False" testMoniker="KDT\{D6CED1FB-9305-46C4-AFA2-557FF9338787}" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
 				<testParameters />
 				<environments activeCloud="SWT" />
 				<children />
 			</testItem>
-			<testItem name="Help" key="{F7A97EDF-CD63-416E-8415-E854F689D71B}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+			<testItem name="Help" key="{F7A97EDF-CD63-416E-8415-E854F689D71B}" group="True" parallel="False" enabled="False" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
 				<testParameters />
 				<children>
-					<testItem name="Submit_SelfMeter_Form" key="{0815D241-4526-49E9-B004-DDFC12D7B797}" group="False" parallel="False" enabled="True" load="False" testMoniker="KDT\{0471E503-2620-42FA-B55B-68786B2D1AD4}" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+					<testItem name="Submit_SelfMeter_Form" key="{0815D241-4526-49E9-B004-DDFC12D7B797}" group="False" parallel="False" enabled="False" load="False" testMoniker="KDT\{0471E503-2620-42FA-B55B-68786B2D1AD4}" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="Submit_Enquiry_Without_Attachment" key="{39361097-675A-4835-9EA6-FE5EEDA3A5E3}" group="False" parallel="False" enabled="True" load="False" testMoniker="KDT\{9375A2C1-6BFD-4BCF-96A2-615C4E61CF4E}" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+					<testItem name="Submit_Enquiry_Without_Attachment" key="{39361097-675A-4835-9EA6-FE5EEDA3A5E3}" group="False" parallel="False" enabled="False" load="False" testMoniker="KDT\{9375A2C1-6BFD-4BCF-96A2-615C4E61CF4E}" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="Submit_Enquiry_For_Linking_Account" key="{017639DF-8D12-4854-A34F-D8398046AAB2}" group="False" parallel="False" enabled="True" load="False" testMoniker="KDT\{671C6D4E-9B10-413E-93C4-6C230158ADC0}" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+					<testItem name="Submit_Enquiry_For_Linking_Account" key="{017639DF-8D12-4854-A34F-D8398046AAB2}" group="False" parallel="False" enabled="False" load="False" testMoniker="KDT\{671C6D4E-9B10-413E-93C4-6C230158ADC0}" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
@@ -310,12 +310,12 @@
 					</testItem>
 				</children>
 			</testItem>
-			<testItem name="Bill_Delivery" key="{EE811E5E-EFF8-4E8A-B0B1-BA15572C3052}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+			<testItem name="Bill_Delivery" key="{EE811E5E-EFF8-4E8A-B0B1-BA15572C3052}" group="True" parallel="False" enabled="False" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
 				<testParameters />
 				<children>
 					<testItem name="Bill_Media_Update_ELEC" key="{3583D2A3-2DD7-40A0-8F04-0CF5A21E0046}" group="False" parallel="False" enabled="True" load="False" testMoniker="KDT\{B00324F6-DED7-498D-B868-EE4E594DCC05}" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
 						<testParameters />
-						<environments activeCloud="CBT" />
+						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
 					<testItem name="Bill_Media_Update_gas" key="{763B3490-BBE9-45D6-8B01-CAC1119DE329}" group="False" parallel="False" enabled="True" load="False" testMoniker="KDT\{E8462E1A-8AB0-437B-A59B-EE34E4184EEE}" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
@@ -350,7 +350,7 @@
 					</testItem>
 				</children>
 			</testItem>
-			<testItem name="End to End Scenarios" key="{32CB30C3-2ADF-4F63-A2DC-6B4105341A61}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+			<testItem name="End to End Scenarios" key="{32CB30C3-2ADF-4F63-A2DC-6B4105341A61}" group="True" parallel="False" enabled="False" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
 				<testParameters />
 				<children>
 					<testItem name="One_Off_Payments" key="{35ED7BB4-7A24-4477-9D8E-00FD54CE4952}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
@@ -457,41 +457,6 @@
 								<children />
 							</testItem>
 						</children>
-					</testItem>
-				</children>
-			</testItem>
-			<testItem name="Check Out Flows" key="{8E86D130-1ECF-4382-B52F-3F8F40775163}" group="True" parallel="False" enabled="False" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-				<testParameters />
-				<children>
-					<testItem name="Add_Fuel_Type" key="{BD500EF9-31AD-46DE-B37C-1CA3E2D44326}" group="False" parallel="False" enabled="False" load="False" testMoniker="KDT\{9A4A988E-A5DB-4529-8EAA-1D69F762552F}" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="Add_Property" key="{0AFDFBF1-2EBD-4A8F-864D-B1A203745CCD}" group="False" parallel="False" enabled="True" load="False" testMoniker="KDT\{E6D0BE70-D8D0-4FAF-86CC-DDD34EB7AC54}" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="Moving_Home" key="{B5C53BF2-3CB0-43DA-875C-FF592105C96B}" group="False" parallel="False" enabled="True" load="False" testMoniker="KDT\{BF439C42-A032-4401-977C-E95DE3194939}" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="Add_Fuel_Type_For_DualFuel_Customer" key="{598185C8-B7F0-4460-ADC7-2E7E7094D94F}" group="False" parallel="False" enabled="True" load="False" testMoniker="KDT\{CE3477B0-E40A-4D40-8AD8-51E9C5FDC053}" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="Add_Fuel_QLD_Customer" key="{D8AA09BD-8193-422B-BE9A-5071D295E8CE}" group="False" parallel="False" enabled="True" load="False" testMoniker="KDT\{51F72C55-8819-4702-9D16-FFCDD2A25376}" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="Add_Fuel_WA_Customer" key="{530A32A6-5C72-4114-A517-D029D4370B1F}" group="False" parallel="False" enabled="True" load="False" testMoniker="KDT\{30F730BE-209F-4006-9E0A-C8159C8D4F5F}" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
 					</testItem>
 				</children>
 			</testItem>

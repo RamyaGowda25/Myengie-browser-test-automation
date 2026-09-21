@@ -291,15 +291,15 @@ function Verify_Salesforce_Billing_Delivery(myEngieSelectedMethod) {
     }
     // STEP: CLOSE ACCOUNT AND SEARCH TABS (100% DYNAMIC SUMMARY)
         
-        // 1. Give the Salesforce sfpage a brief moment to stabilize its frame memory trees
+        // 1. Give the Salesforce sfPage a brief moment to stabilize its frame memory trees
         aqUtils.Delay(1500);
 
         var dynamicAccountNumber = "";
 
         // 2. HIGH-RESILIENCY DYNAMIC TEXT EXTRACTION:
         // Variant A: Targets the bold primary Account Header Name text string container at the top left of your profile summary card.
-        var accountHeaderXPath = "//div[contains(@class, 'entityNameText')] | //h1[contains(@class, 'slds-sfpage-header__title')]//span";
-        var headerElement = sfpage.WaitElement(accountHeaderXPath, 2000);
+        var accountHeaderXPath = "//div[contains(@class, 'entityNameText')] | //h1[contains(@class, 'slds-sfPage-header__title')]//span";
+        var headerElement = sfPage.WaitElement(accountHeaderXPath, 2000);
 
         if (headerElement.Exists && headerElement.contentText.trim() !== "") {
             var rawHeader = headerElement.contentText.trim();
@@ -315,7 +315,7 @@ function Verify_Salesforce_Billing_Delivery(myEngieSelectedMethod) {
         if (dynamicAccountNumber === "") {
             Log.Message("Primary header check missed. Running deep data field text scan...");
             var accountDetailFieldXPath = "//*[text()='Account Number']/ancestor::*[contains(@class, 'form-element')]//*[contains(@class, 'value')]//*[text()] | //*[text()='Account Number']/following::*[contains(@class, 'value')]//*[text()]";
-            var detailElement = sfpage.WaitElement(accountDetailFieldXPath, 2000);
+            var detailElement = sfPage.WaitElement(accountDetailFieldXPath, 2000);
             
             if (detailElement.Exists) {
                 var rawDetail = detailElement.contentText.trim();
@@ -330,7 +330,7 @@ function Verify_Salesforce_Billing_Delivery(myEngieSelectedMethod) {
         // Variant C: Absolute secure browser address bar URL tracking backup fallback
         if (dynamicAccountNumber === "") {
             Log.Message("Screen text masked. Parsing active browser address bar URL metadata...");
-            var currentURL = sfpage.URL;
+            var currentURL = sfPage.URL;
             var urlMatch = currentURL.match(/611\d{5}/) || currentURL.match(/\d{8}/);
             if (urlMatch) {
                 dynamicAccountNumber = urlMatch[0];
@@ -345,7 +345,7 @@ function Verify_Salesforce_Billing_Delivery(myEngieSelectedMethod) {
 
             // A. CLOSE THE SEARCH SUB-TAB FIRST (Left Highlighted Box: title="Close 61112280 - Search")
             var searchTabXPath = "//button[contains(@title, 'Close " + dynamicAccountNumber + " - Search') or @title='Close " + dynamicAccountNumber + " - Search']";
-            var searchBtn = sfpage.WaitElement(searchTabXPath, 4000);
+            var searchBtn = sfPage.WaitElement(searchTabXPath, 4000);
 
             if (searchBtn.Exists && searchBtn.Width > 0) {
                 Log.Message("Clicking Search tab close button...");
@@ -353,14 +353,14 @@ function Verify_Salesforce_Billing_Delivery(myEngieSelectedMethod) {
                 aqUtils.Delay(1500); // 1.5-second animation delay for the browser panel to collapse cleanly
             } else {
                 Log.Warning("Search close button hidden inside layout tree. Dispatching native console escape shortcut...");
-                sfpage.Click(100, 100); // Ensure active window focus
-                sfpage.Keys("[Esc]"); // Salesforce native hotkey to clear sub-tabs
+                sfPage.Click(100, 100); // Ensure active window focus
+                sfPage.Keys("[Esc]"); // Salesforce native hotkey to clear sub-tabs
                 aqUtils.Delay(1500);
             }
 
             // B. CLOSE THE ACCOUNT PRIMARY TAB NEXT (Right Highlighted Box: title="Close 61112280 | Account")
             var accountTabXPath = "//button[contains(@title, 'Close " + dynamicAccountNumber + " | Account') or @title='Close " + dynamicAccountNumber + " | Account']";
-            var accountBtn = sfpage.WaitElement(accountTabXPath, 4000);
+            var accountBtn = sfPage.WaitElement(accountTabXPath, 4000);
 
             if (accountBtn.Exists && accountBtn.Width > 0) {
                 Log.Message("Clicking Account tab close button...");
@@ -368,7 +368,7 @@ function Verify_Salesforce_Billing_Delivery(myEngieSelectedMethod) {
                 aqUtils.Delay(1500);
             } else {
                 Log.Warning("Account close button masked. Triggering native console tab closure shortcut...");
-                sfpage.Keys("~w"); // Salesforce native primary tab close command (Shift + W)
+                sfPage.Keys("~w"); // Salesforce native primary tab close command (Shift + W)
                 aqUtils.Delay(1500);
             }
 
@@ -379,7 +379,7 @@ function Verify_Salesforce_Billing_Delivery(myEngieSelectedMethod) {
             // ABSOLUTE FLOATING LOOP BACKUP: If security wrappers mask all layers, loop through the header 
             // panel tabBar container and click any close button found to clear your screen natively
             Log.Warning("Completely unable to parse text numbers. Launching broad wildcard array net fallback...");
-            var wildcardList = sfpage.FindElements("//ul[contains(@class, 'tabBar')]//button[contains(@title, 'Close')] | //button[starts-with(@title, 'Close ')]");
+            var wildcardList = sfPage.FindElements("//ul[contains(@class, 'tabBar')]//button[contains(@title, 'Close')] | //button[starts-with(@title, 'Close ')]");
             
             if (wildcardList && wildcardList.length > 0) {
                 for (var i = wildcardList.length - 1; i >= 0; i--) {

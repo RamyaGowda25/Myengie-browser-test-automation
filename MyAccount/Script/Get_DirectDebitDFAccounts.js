@@ -9,7 +9,7 @@
     var accountCell = page.FindChildByXPath("//td[contains(text(), 'Electricity')]/following-sibling::td", true);
     if (accountCell.Exists) { 
       var liveAccountNumber = accountCell.contentText.trim();
-      Log.Message("Gas Account Number Retrieved: " + liveAccountNumber)
+      Log.Message("ELEC Account Number Retrieved: " + liveAccountNumber)
       // Save the output safely to your Project variable space
       Project.Variables.DirectDebitElecAccountNumber = liveAccountNumber; 
     } 
